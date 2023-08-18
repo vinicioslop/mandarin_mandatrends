@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+:root {
+    --navbar-logo: rgb(35, 31, 32);
+    --navbar-text-color: #fff;
+
+    --content-src-text: rgb(178, 178, 178);
+    --content-side-margin: 5vw;
+
+    --pre-footer-background: rgb(252, 76, 2);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    --navbar-color1: #ffffff;
+    --navbar-color2: #fc4c02;
+    --navbar-color3: #f8bfce;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(233, 73, 42, 1) 0%, rgba(231, 35, 87, 1) 100%);
+}
+
+.navbar .content {
+    height: 100%;
+
+    color: var(--navbar-text-color);
+}
+
+.navbar .content .principal {
+    width: 170px;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.navbar .content .edition {
+    text-align: right;
+    font-size: 14px;
+}
+
+#meio_circulo {
+    position: absolute;
+    top: 20px;
+    left: -95px;
+
+    z-index: 1;
+
+    height: 300px;
+}
+
+#bolinhas {
+    margin-left: 10px;
+
+    position: absolute;
+    top: 135px;
+
+    z-index: 1;
+
+    height: 100px;
+    width: auto;
+}
+
+#setas {
+    position: absolute;
+    top: 30px;
+
+    z-index: 1;
+}
+
+#mulher {
+    position: absolute;
+
+    z-index: 1;
+}
+
+#ondas {
+    align-self: flex-end;
+
+    width: 60%;
+}
+
+#triangulo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+
+    z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        height: 220px;
+        width: 100%;
+    }
+
+    .navbar .content {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar .content .principal {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 10px;
+
+        width: 100%;
+
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .navbar .content .edition {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #meio_circulo {
+        position: absolute;
+        top: 40px;
+        left: -60px;
+    
+        z-index: 1;
+    
+        height: 300px;
+    }
+
+    #triangulo {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    
+        z-index: 1;
+    }
+
+    #bolinhas {
+        display: none;
+    }
+
+    #setas {
+        display: none;
+    }
+
+    #mulher {
+        display: none;
+    }
+
+    #ondas {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 576px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        height: 180px;
+        width: 100%;
+    }
+
+    .navbar .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navbar .content .principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #meio_circulo {
+        position: absolute;
+        top: 20px;
+        left: -100px;
+    }
+
+    #bolinhas {
+        margin-left: 10px;
+    
+        position: absolute;
+        top: 135px;
+    
+        z-index: 1;
+    
+        height: 100px;
+        width: auto;
+    }
+
+    #setas {
+        position: absolute;
+        top: 30px;
+    
+        z-index: 1;
+    }
+
+    #ondas {
+        align-self: flex-end;
+    
+        width: 60%;
+    }
+
+    #triangulo {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+
+    #mulher {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        height: 180px;
+        width: 100%;
+    }
+
+    .navbar .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navbar .content .principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #meio_circulo {
+        position: absolute;
+        top: 20px;
+        left: -100px;
+    }
+
+    #mulher {
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    #triangulo {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        height: 180px;
+        width: 100%;
+    }
+
+    .navbar .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navbar .content .principal {
+        display: flex;
+        flex-direction: column;
+    }
+}

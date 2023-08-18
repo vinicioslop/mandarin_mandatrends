@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+:root {
+    --navbar-background: rgb(236, 226, 214);
+    --navbar-logo: rgb(35, 31, 32);
+    --navbar-text-color: #fff;
+
+    --content-src-text: rgb(178, 178, 178);
+    --content-side-margin: 5vw;
+
+    --pre-footer-background: rgb(252, 76, 2);
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
